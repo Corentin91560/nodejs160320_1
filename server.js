@@ -20,7 +20,7 @@ app.get('/hello', function (req, res) {
     }
 
 })
- 
+
 app.post('/chat', (req, res) => {
   var message = req.body.msg
   switch(message) {
@@ -55,6 +55,6 @@ app.post('/chat', (req, res) => {
   }
 });
 
-app.listen(3000 || process.env.PORT , function () {
+app.listen(process.env.PORT || 3000 , function () {
   console.log('Example app listening on port 3000!')
 })
