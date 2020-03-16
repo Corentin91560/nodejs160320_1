@@ -20,7 +20,7 @@ app.get('/hello', function (req, res) {
     }
 
 })
-
+ 
 app.post('/chat', (req, res) => {
   var message = req.body.msg
   switch(message) {
