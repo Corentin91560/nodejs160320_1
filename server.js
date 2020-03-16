@@ -22,7 +22,8 @@ app.get('/hello', function (req, res) {
 })
 
 app.post('/chat', (req, res) => {
-  switch(req.body.msg) {
+  var message = req.body.msg
+  switch(message) {
     case "ville":
       res.send("Nous sommes à Paris\n");
       break;
@@ -40,13 +41,13 @@ app.post('/chat', (req, res) => {
         res.send(json.day);
       }
       break;
-    case "demain = Mercredi":
+    case (message.match(/^demain = /) || {}).input:
       let day = {
-          day: 'Mercredi',
+          day: message.substring(9),
       };
       let data = JSON.stringify(day);
       fs.writeFileSync('response.json', data);
-      res.send("Mercredi");
+      res.send(message.substring(9));
       break;
     default:
       res.send("Réponse par défaut\n");
