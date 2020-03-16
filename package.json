@@ -1,22 +1,21 @@
 {
-  "name": "ex1",
+  "name": "nodejs160320_2",
   "version": "1.0.0",
-  "description": "``",
+  "description": "Initialisation du projet :",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Corentin91560/nodejs160320_1.git"
+    "url": "git+https://github.com/Corentin91560/nodejs160320_2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Corentin91560/nodejs160320_1/issues"
+    "url": "https://github.com/Corentin91560/nodejs160320_2/issues"
   },
-  "homepage": "https://github.com/Corentin91560/nodejs160320_1#readme",
+  "homepage": "https://github.com/Corentin91560/nodejs160320_2#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
