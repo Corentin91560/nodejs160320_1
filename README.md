@@ -16,4 +16,3 @@ pouvoir tester (disponible sur heroku):
 
 `$ curl http://localhost:3000/`
 `$ curl https://nodejs160320-2.herokuapp.com/`
-
