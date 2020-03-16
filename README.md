@@ -12,3 +12,7 @@ demarrage du serveur :
 
 `$ npm start`
 
+pouvoir tester :
+
+`$ curl http://localhost:3000/`
+
