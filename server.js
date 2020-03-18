@@ -1,13 +1,13 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-
-const url = 'mongodb://localhost:27017';
+const url = process.env.DATABASE_URL || 'mongodb+srv://sokaii:sokaiipwd@chat-bot-hnjd7.mongodb.net/test?retryWrites=true&w=majority'
 const dbName = 'chat-bot';
 const express = require('express')
 var app = express();
 var port = process.env.PORT || 3000;
 app.use(express.json());
 const fs = require('fs');
+
 
 app.get('/', function (req, res) {
       res.send('Hello World');
