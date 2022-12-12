@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Corentin91560/nodejs160320_1#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongodb": "^3.5.5"
   }
 }
